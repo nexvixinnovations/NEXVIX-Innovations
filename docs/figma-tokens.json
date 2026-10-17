@@ -1,0 +1,57 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "color": {
+    "dark": {
+      "bg": { "$value": "#0A0A0F", "$type": "color" },
+      "surface": { "$value": "#12121A", "$type": "color" },
+      "surfaceElevated": { "$value": "#181824", "$type": "color" },
+      "border": { "$value": "#1E1E2C", "$type": "color" }
+    },
+    "brand": {
+      "primary": { "$value": "#1F3BFF", "$type": "color", "description": "Electric blue brand primary" },
+      "primaryHover": { "$value": "#142ACC", "$type": "color" },
+      "lightAccent": { "$value": "#6B7FFF", "$type": "color" },
+      "accentSubtle": { "$value": "#1C254C", "$type": "color" }
+    },
+    "light": {
+      "bg": { "$value": "#F5F6FA", "$type": "color" },
+      "surface": { "$value": "#FFFFFF", "$type": "color" },
+      "border": { "$value": "#E2E5EE", "$type": "color" }
+    },
+    "text": {
+      "dark": { "$value": "#0A0A0F", "$type": "color" },
+      "mutedDark": { "$value": "#5B6070", "$type": "color" },
+      "light": { "$value": "#FFFFFF", "$type": "color" },
+      "mutedLight": { "$value": "#A0A4B8", "$type": "color" }
+    },
+    "status": {
+      "success": { "$value": "#10B981", "$type": "color" },
+      "warning": { "$value": "#F59E0B", "$type": "color" },
+      "error": { "$value": "#EF4444", "$type": "color" }
+    }
+  },
+  "fontFamily": {
+    "heading": { "$value": "Space Grotesk", "$type": "fontFamily" },
+    "body": { "$value": "Inter", "$type": "fontFamily" }
+  },
+  "spacing": {
+    "grid": { "$value": "8px", "$type": "dimension" },
+    "1": { "$value": "4px", "$type": "dimension" },
+    "2": { "$value": "8px", "$type": "dimension" },
+    "3": { "$value": "12px", "$type": "dimension" },
+    "4": { "$value": "16px", "$type": "dimension" },
+    "5": { "$value": "20px", "$type": "dimension" },
+    "6": { "$value": "24px", "$type": "dimension" },
+    "8": { "$value": "32px", "$type": "dimension" },
+    "10": { "$value": "40px", "$type": "dimension" },
+    "12": { "$value": "48px", "$type": "dimension" },
+    "16": { "$value": "64px", "$type": "dimension" },
+    "20": { "$value": "80px", "$type": "dimension" },
+    "24": { "$value": "96px", "$type": "dimension" }
+  },
+  "borderRadius": {
+    "maxCorner": { "$value": "4px", "$type": "dimension" },
+    "imageCorner": { "$value": "2px", "$type": "dimension" },
+    "pill": { "$value": "9999px", "$type": "dimension" }
+  }
+}

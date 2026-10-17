@@ -1,0 +1,75 @@
+/**
+ * NEXVIX Innovations - Design System Variables & Tokens
+ * Compatible with Figma Design Tokens & 8px Spacing Grid
+ */
+
+:root {
+  /* Brand Color Palette */
+  --color-dark-bg: #0A0A0F;
+  --color-dark-surface: #12121A;
+  --color-dark-surface-elevated: #181824;
+  --color-dark-border: rgba(255, 255, 255, 0.08);
+  --color-dark-border-hover: rgba(31, 59, 255, 0.4);
+
+  --color-primary: #1F3BFF;
+  --color-primary-hover: #142ACC;
+  --color-primary-glow: rgba(31, 59, 255, 0.35);
+  --color-light-accent: #6B7FFF;
+  --color-accent-subtle: rgba(107, 127, 255, 0.12);
+
+  --color-light-bg: #F5F6FA;
+  --color-light-surface: #FFFFFF;
+  --color-light-border: #E2E5EE;
+  --color-light-border-hover: #1F3BFF;
+
+  /* Typography Colors */
+  --color-text-dark: #0A0A0F;
+  --color-text-muted-dark: #5B6070;
+  --color-text-light: #FFFFFF;
+  --color-text-muted-light: #A0A4B8;
+
+  /* Status Colors */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+
+  /* Typography */
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* 8px Spacing Grid */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-32: 128px;
+
+  /* Corner Radii - Max 4px */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --shadow-blue-glow: 0 0 25px rgba(31, 59, 255, 0.45);
+  --shadow-card-hover: 0 12px 32px rgba(10, 10, 15, 0.12);
+
+  /* Layout */
+  --container-max-width: 1280px;
+  --navbar-height: 80px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}

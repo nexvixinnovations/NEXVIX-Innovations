@@ -1,0 +1,243 @@
+{
+  "project": "NEXVIX Innovations Marketing Website",
+  "sourceDirectory": "D:\\Projects\\NEXVIX Innovations\\Images",
+  "targetDirectory": "/public/assets/images/",
+  "providedImages": [
+    {
+      "originalFilename": "Automation.png",
+      "dimensions": "1254x1254",
+      "visualContent": "Futuristic workflow automation interface on tablet with robotic arm, gears, clock, message icons and glowing electric blue circuits.",
+      "optimizedWebp": "assets/images/automation.webp",
+      "retinaWebp": "assets/images/automation@2x.webp",
+      "standardWebp": "assets/images/automation@1x.webp",
+      "mappedSections": [
+        {
+          "section": "Services",
+          "slot": "05 Business Automation",
+          "purpose": "Showcases end-to-end automated workflows, trigger-action flows, and system connectivity."
+        }
+      ]
+    },
+    {
+      "originalFilename": "Business Growth.jpg",
+      "dimensions": "1024x1024",
+      "visualContent": "Professional business handshake above a wooden desk featuring an upward-trending bar chart and alarm clock against a warm sunset skyline.",
+      "optimizedWebp": "assets/images/business-growth.webp",
+      "retinaWebp": "assets/images/business-growth@2x.webp",
+      "standardWebp": "assets/images/business-growth@1x.webp",
+      "mappedSections": [
+        {
+          "section": "About NEXVIX",
+          "slot": "About Showcase Visual",
+          "purpose": "Demonstrates trusted partnership, on-time delivery, and measurable commercial growth."
+        }
+      ]
+    },
+    {
+      "originalFilename": "SEO.jpg",
+      "dimensions": "736x736",
+      "visualContent": "Businessman holding a glowing holographic constellation of SEO, Google search ranking, analytics graphs, and web connectivity icons.",
+      "optimizedWebp": "assets/images/seo.webp",
+      "retinaWebp": "assets/images/seo@2x.webp",
+      "standardWebp": "assets/images/seo@1x.webp",
+      "mappedSections": [
+        {
+          "section": "Services",
+          "slot": "01 Website Development",
+          "purpose": "Represents high-performance, SEO-ready web engineering built to turn visitors into customers."
+        }
+      ]
+    },
+    {
+      "originalFilename": "Support.png",
+      "dimensions": "1254x1254",
+      "visualContent": "Modern white AI robot wearing a headset at a desk with laptop, active glowing chat messages, network nodes, and 24/7 support telemetry.",
+      "optimizedWebp": "assets/images/support.webp",
+      "retinaWebp": "assets/images/support@2x.webp",
+      "standardWebp": "assets/images/support@1x.webp",
+      "mappedSections": [
+        {
+          "section": "Services",
+          "slot": "06 AI Chatbot for Business",
+          "purpose": "Visualizes intelligent 24/7 AI conversational agents for web, WhatsApp, and social channels."
+        }
+      ]
+    },
+    {
+      "originalFilename": "NEXVIX-Logo-v2.png",
+      "dimensions": "1024x542 (cropped 792x461)",
+      "visualContent": "Official clean NEXVIX brand logo with distinctive geometric infinity diamond flame glyph without bottom sub-label.",
+      "optimizedWebp": "assets/images/nexvix-logo.webp",
+      "whiteVariantWebp": "assets/images/nexvix-logo-white.webp",
+      "faviconPng": "assets/images/favicon.png",
+      "mappedSections": [
+        {
+          "section": "Sticky Navbar",
+          "slot": "Brand Identity Logo",
+          "purpose": "Primary dark brand mark displayed prominently in the sticky white navigation header."
+        },
+        {
+          "section": "Footer",
+          "slot": "Brand Identity White Logo",
+          "purpose": "Inverted crisp white brand mark displayed on the near-black footer background."
+        },
+        {
+          "section": "Head / Browser",
+          "slot": "Favicon & OpenGraph Preview",
+          "purpose": "Tab icon and social sharing preview brand badge."
+        }
+      ]
+    },
+    {
+      "originalFilename": "service-web-dev.jpg",
+      "dimensions": "1376x768",
+      "visualContent": "Candid documentary-style photograph of a real tech pair collaborating closely on website architecture and code in a modern bright office with natural lighting.",
+      "optimizedWebp": "assets/images/service-web-dev.webp",
+      "retinaWebp": "assets/images/service-web-dev@2x.webp",
+      "standardWebp": "assets/images/service-web-dev.webp",
+      "mappedSections": [
+        {
+          "section": "Services",
+          "slot": "01 Website Development",
+          "purpose": "Showcases authentic, human-engineered high-performance website development."
+        }
+      ]
+    },
+    {
+      "originalFilename": "service-android-app.jpg",
+      "dimensions": "1376x768",
+      "visualContent": "Documentary-style photograph of a real developer holding and testing a sleek smartphone mobile app at a dual-screen workstation.",
+      "optimizedWebp": "assets/images/service-android-app.webp",
+      "retinaWebp": "assets/images/service-android-app@2x.webp",
+      "standardWebp": "assets/images/service-android-app.webp",
+      "mappedSections": [
+        {
+          "section": "Services",
+          "slot": "02 Android App Development",
+          "purpose": "Visualizes authentic, real-world Android mobile engineering and responsive touch testing."
+        }
+      ]
+    },
+    {
+      "originalFilename": "service-ai-video.jpg",
+      "dimensions": "1376x768",
+      "visualContent": "Professional documentary photograph of a real creative video producer in a studio editing video timelines and AI-assisted visual assets on dual monitors.",
+      "optimizedWebp": "assets/images/service-ai-video.webp",
+      "retinaWebp": "assets/images/service-ai-video@2x.webp",
+      "standardWebp": "assets/images/service-ai-video.webp",
+      "mappedSections": [
+        {
+          "section": "Services",
+          "slot": "03 AI Video Creation",
+          "purpose": "Illustrates real human-directed AI video synthesis, motion design, and marketing production."
+        }
+      ]
+    },
+    {
+      "originalFilename": "service-crm-systems.jpg",
+      "dimensions": "1376x768",
+      "visualContent": "Real-person photograph of a sales director reviewing enterprise CRM pipeline metrics and customer relationship workflows at an office desktop.",
+      "optimizedWebp": "assets/images/service-crm-systems.webp",
+      "retinaWebp": "assets/images/service-crm-systems@2x.webp",
+      "standardWebp": "assets/images/service-crm-systems.webp",
+      "mappedSections": [
+        {
+          "section": "Services",
+          "slot": "04 CRM Systems",
+          "purpose": "Demonstrates human-centered CRM lead pipelines, deal tracking, and workflow integration."
+        }
+      ]
+    },
+    {
+      "originalFilename": "professional-design.jpg",
+      "dimensions": "1600x900",
+      "visualContent": "State-of-the-art UI/UX design workspace showing wireframes, design tokens, component libraries, and intuitive interface layouts on transparent screens.",
+      "optimizedWebp": "assets/images/professional-design.webp",
+      "retinaWebp": "assets/images/professional-design@2x.webp",
+      "standardWebp": "assets/images/professional-design@1x.webp",
+      "mappedSections": [
+        {
+          "section": "Quality of Our Work",
+          "slot": "01 Professional Design",
+          "purpose": "Demonstrates precision design systems, intuitive navigation, and polished user journeys."
+        }
+      ]
+    },
+    {
+      "originalFilename": "speed-reliability.jpg",
+      "dimensions": "1600x900",
+      "visualContent": "Futuristic high-performance network velocity and speed telemetry dashboard showing 99.99% uptime, 42ms response times, and 100/100 performance score on curved glass display.",
+      "optimizedWebp": "assets/images/speed-reliability.webp",
+      "retinaWebp": "assets/images/speed-reliability@2x.webp",
+      "standardWebp": "assets/images/speed-reliability.webp",
+      "mappedSections": [
+        {
+          "section": "Quality of Our Work",
+          "slot": "02 Speed and Reliability",
+          "purpose": "Highlights technical performance, 99.99% uptime, and millisecond latency optimization."
+        }
+      ]
+    },
+    {
+      "originalFilename": "security-privacy.jpg",
+      "dimensions": "1600x900",
+      "visualContent": "Futuristic zero-trust cybersecurity operations center with holographic displays showing encrypted blockchain shield, biometric authorization, and firewall protection.",
+      "optimizedWebp": "assets/images/security-privacy.webp",
+      "retinaWebp": "assets/images/security-privacy@2x.webp",
+      "standardWebp": "assets/images/security-privacy.webp",
+      "mappedSections": [
+        {
+          "section": "Quality of Our Work",
+          "slot": "03 Security and Privacy",
+          "purpose": "Represents zero-trust architecture, multi-factor biometric authentication, and end-to-end data encryption."
+        }
+      ]
+    },
+    {
+      "originalFilename": "automation-integrations.jpg",
+      "dimensions": "1600x900",
+      "visualContent": "Futuristic multi-platform software integration command center showing luminous API node pipelines, webhook sync graphs, and autonomous workflow triggers.",
+      "optimizedWebp": "assets/images/automation-integrations.webp",
+      "retinaWebp": "assets/images/automation-integrations@2x.webp",
+      "standardWebp": "assets/images/automation-integrations.webp",
+      "mappedSections": [
+        {
+          "section": "Quality of Our Work",
+          "slot": "04 Automation and Integrations",
+          "purpose": "Illustrates connecting multi-cloud APIs, automated webhooks, and synchronized business data flows."
+        }
+      ]
+    },
+    {
+      "originalFilename": "business-results.jpg",
+      "dimensions": "1600x900",
+      "visualContent": "Executive revenue growth analytics dashboard on curved holographic glass monitor showing exponential revenue hockey-stick graph, +340% ROI, and conversion metrics.",
+      "optimizedWebp": "assets/images/business-results.webp",
+      "retinaWebp": "assets/images/business-results@2x.webp",
+      "standardWebp": "assets/images/business-results.webp",
+      "mappedSections": [
+        {
+          "section": "Quality of Our Work",
+          "slot": "05 Business Results",
+          "purpose": "Showcases measurable ROI, conversion rate optimization, and exponential commercial growth."
+        }
+      ]
+    },
+    {
+      "originalFilename": "after-sales-support.jpg",
+      "dimensions": "1600x900",
+      "visualContent": "Futuristic 24/7 client operations and after-sales support command room with live system health telemetry, proactive maintenance monitors, and 100% SLA compliance.",
+      "optimizedWebp": "assets/images/after-sales-support.webp",
+      "retinaWebp": "assets/images/after-sales-support@2x.webp",
+      "standardWebp": "assets/images/after-sales-support.webp",
+      "mappedSections": [
+        {
+          "section": "Quality of Our Work",
+          "slot": "06 After-Sales Support",
+          "purpose": "Demonstrates dedicated engineering oversight, 24/7 SLA monitoring, and seamless client platform handover."
+        }
+      ]
+    }
+  ],
+  "placeholderSlots": []
+}
