@@ -1,4 +1,5 @@
-import { loadEnvConfig } from '@next/env';
+import pkg from '@next/env';
+const { loadEnvConfig } = pkg;
 import { Resend } from 'resend';
 import { getContactEnv } from '../lib/env.js';
 
@@ -42,7 +43,7 @@ async function runTestEmail() {
     }
 
     console.log(`[SUCCESS] Test email sent successfully! Message ID: ${result.data?.id}`);
-    process.exit(0);
+    return;
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Unknown error';
     console.error(`[FAILURE] Exception thrown while sending test email: ${message}`);
