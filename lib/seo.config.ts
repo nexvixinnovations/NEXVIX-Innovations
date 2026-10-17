@@ -30,7 +30,7 @@ export const siteConfig = {
   locale: 'en_US',
 
   contact: {
-    email: 'nexvixinnovations@gmail.com',
+    email: 'nexvix.innovations@gmail.com',
     phone: '+91 7708382018',
     phoneRaw: '917708382018',
     whatsapp: 'https://wa.me/917708382018',

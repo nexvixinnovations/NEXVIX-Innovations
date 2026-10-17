@@ -59,7 +59,7 @@ export default function GlobalError({
             Return to Homepage
           </Link>
           <a
-            href="mailto:nexvixinnovations@gmail.com"
+            href="mailto:nexvix.innovations@gmail.com"
             className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-transparent hover:bg-white/5 text-[#8E92A4] hover:text-white border border-transparent font-medium text-sm transition-colors"
           >
             Report Incident

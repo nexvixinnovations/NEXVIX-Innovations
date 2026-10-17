@@ -14,28 +14,44 @@ export default function Contact() {
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [touched, setTouched] = useState<Record<string, boolean>>({});
+  const [hasSubmitted, setHasSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [serverError, setServerError] = useState('');
 
-  const validate = () => {
+  const validate = (data = formData) => {
     const errs: Record<string, string> = {};
-    if (formData.name.trim().length < 2) {
+    if (data.name.trim().length < 2) {
       errs.name = 'Please enter your full name (at least 2 characters).';
     }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email.trim())) {
+    if (!emailRegex.test(data.email.trim())) {
       errs.email = 'Please enter a valid work email address.';
     }
-    if (formData.message.trim().length < 10) {
+    const phoneDigits = data.phone.replace(/\D/g, '');
+    if (data.phone.trim() && phoneDigits.length !== 10) {
+      errs.phone = 'Please enter a valid 10-digit phone number.';
+    }
+    if (data.message.trim().length < 10) {
       errs.message = 'Please provide at least a few details about your project (min 10 characters).';
     }
     setErrors(errs);
     return Object.keys(errs).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleBlur = (field: string) => {
+    setTouched((prev) => ({ ...prev, [field]: true }));
+    validate();
+  };
+
+  const isFieldError = (field: string) => {
+    return (hasSubmitted || touched[field]) && Boolean(errors[field]);
+  };
+
+  const handleSubmit = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    setHasSubmitted(true);
     setServerError('');
 
     if (!validate()) return;
@@ -56,10 +72,13 @@ export default function Contact() {
           name: '',
           email: '',
           phone: '',
-          service: 'website',
+          service: 'website-development',
           message: '',
           honeypot: '',
         });
+        setTouched({});
+        setHasSubmitted(false);
+        setErrors({});
         setTimeout(() => setSubmitSuccess(false), 9000);
       } else {
         setServerError(data.error || 'Unable to submit your request. Please try again.');
@@ -153,8 +172,16 @@ export default function Contact() {
             )}
 
             {serverError && (
-              <div className="p-3 mb-4 rounded bg-red-100 text-red-700 text-sm border border-red-200" role="alert">
-                {serverError}
+              <div className="form-error-banner" role="alert">
+                <span>{serverError}</span>
+                <button
+                  type="button"
+                  onClick={() => handleSubmit()}
+                  className="retry-btn"
+                  disabled={submitting}
+                >
+                  Retry
+                </button>
               </div>
             )}
 
@@ -180,16 +207,18 @@ export default function Contact() {
                     type="text"
                     id="name"
                     name="name"
-                    className={`form-control ${errors.name ? 'error' : ''}`}
+                    className={`form-control ${isFieldError('name') ? 'error' : ''}`}
                     placeholder="Name"
                     value={formData.name}
                     onChange={(e) => {
-                      setFormData({ ...formData, name: e.target.value });
-                      if (errors.name) setErrors({ ...errors, name: '' });
+                      const next = { ...formData, name: e.target.value };
+                      setFormData(next);
+                      if (hasSubmitted || touched.name) validate(next);
                     }}
+                    onBlur={() => handleBlur('name')}
                     required
                   />
-                  {errors.name && <span className="form-error-msg visible">{errors.name}</span>}
+                  {isFieldError('name') && <span className="form-error-msg visible">{errors.name}</span>}
                 </div>
 
                 <div className="form-group">
@@ -198,16 +227,18 @@ export default function Contact() {
                     type="email"
                     id="email"
                     name="email"
-                    className={`form-control ${errors.email ? 'error' : ''}`}
+                    className={`form-control ${isFieldError('email') ? 'error' : ''}`}
                     placeholder="example@gmail.com"
                     value={formData.email}
                     onChange={(e) => {
-                      setFormData({ ...formData, email: e.target.value });
-                      if (errors.email) setErrors({ ...errors, email: '' });
+                      const next = { ...formData, email: e.target.value };
+                      setFormData(next);
+                      if (hasSubmitted || touched.email) validate(next);
                     }}
+                    onBlur={() => handleBlur('email')}
                     required
                   />
-                  {errors.email && <span className="form-error-msg visible">{errors.email}</span>}
+                  {isFieldError('email') && <span className="form-error-msg visible">{errors.email}</span>}
                 </div>
               </div>
 
@@ -218,11 +249,17 @@ export default function Contact() {
                     type="tel"
                     id="phone"
                     name="phone"
-                    className="form-control"
+                    className={`form-control ${isFieldError('phone') ? 'error' : ''}`}
                     placeholder="10 digit number"
                     value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    onChange={(e) => {
+                      const next = { ...formData, phone: e.target.value };
+                      setFormData(next);
+                      if (hasSubmitted || touched.phone) validate(next);
+                    }}
+                    onBlur={() => handleBlur('phone')}
                   />
+                  {isFieldError('phone') && <span className="form-error-msg visible">{errors.phone}</span>}
                 </div>
 
                 <div className="form-group">
@@ -250,17 +287,19 @@ export default function Contact() {
                 <textarea
                   id="message"
                   name="message"
-                  className={`form-control ${errors.message ? 'error' : ''}`}
+                  className={`form-control ${isFieldError('message') ? 'error' : ''}`}
                   rows={4}
                   placeholder="Tell us about your project requirements, current bottlenecks, and target timeline..."
                   value={formData.message}
                   onChange={(e) => {
-                    setFormData({ ...formData, message: e.target.value });
-                    if (errors.message) setErrors({ ...errors, message: '' });
+                    const next = { ...formData, message: e.target.value };
+                    setFormData(next);
+                    if (hasSubmitted || touched.message) validate(next);
                   }}
+                  onBlur={() => handleBlur('message')}
                   required
                 />
-                {errors.message && <span className="form-error-msg visible">{errors.message}</span>}
+                {isFieldError('message') && <span className="form-error-msg visible">{errors.message}</span>}
               </div>
 
               <button
