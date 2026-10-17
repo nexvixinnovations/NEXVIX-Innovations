@@ -5,6 +5,44 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Typography & Component Safeguards over Tailwind Preflight */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading, 'Space Grotesk', sans-serif);
+}
+
+.why-card-title {
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  line-height: 1.35 !important;
+}
+
+.why-card-desc {
+  font-size: 0.85rem !important;
+  color: #94A3B8 !important;
+  line-height: 1.6 !important;
+}
+
+.process-step-num {
+  font-family: var(--font-heading, 'Space Grotesk', sans-serif) !important;
+  font-size: 2.5rem !important;
+  font-weight: 800 !important;
+  color: #CBD5E1 !important;
+}
+
+.process-title {
+  font-family: var(--font-heading, 'Space Grotesk', sans-serif) !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: #0F172A !important;
+}
+
+.process-text {
+  font-size: 0.9375rem !important;
+  color: #475569 !important;
+  line-height: 1.65 !important;
+}
+
 /* Accessibility & UX Enhancements */
 .skip-to-content {
   position: absolute;

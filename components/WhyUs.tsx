@@ -22,12 +22,12 @@ const advantages: AdvantageItem[] = [
   },
   {
     id: '04',
-    title: 'Transparent Pricing',
+    title: 'Transparent Pricing & Comms',
     desc: 'Clear sprint scopes, transparent milestones, zero hidden licensing markups, and straightforward weekly updates.',
   },
   {
     id: '05',
-    title: 'Long-Term Partnership',
+    title: 'Long-Term Support & Partnership',
     desc: 'We stand by your platform post-launch with proactive maintenance, security patches, and strategic growth guidance.',
   },
 ];
@@ -53,14 +53,12 @@ export default function WhyUs() {
         <div className="why-grid" data-figma-layer="Why-Cards-Grid">
           {advantages.map((item) => (
             <div key={item.id} className="why-card" data-figma-layer={`Why-Card-${item.id}`}>
-              <div className="why-card-header">
-                <div className="why-check-icon">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                </div>
-                <h3 className="why-card-title">{item.title}</h3>
+              <div className="why-check-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
               </div>
+              <h3 className="why-card-title">{item.title}</h3>
               <p className="why-card-desc">{item.desc}</p>
             </div>
           ))}
