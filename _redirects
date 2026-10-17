@@ -1,0 +1,2 @@
+# Redirect www to non-www
+https://www.nexvixinnovations.com/* https://nexvixinnovations.com/:splat 301!

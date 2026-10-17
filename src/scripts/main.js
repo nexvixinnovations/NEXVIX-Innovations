@@ -2,12 +2,18 @@
  * NEXVIX Innovations - Core Interactive Scripts
  */
 
-document.addEventListener('DOMContentLoaded', () => {
+function initAll() {
   initNavbar();
   initAnimatedCounters();
   initContactForm();
   initSmoothScroll();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAll);
+} else {
+  initAll();
+}
 
 /* ==========================================================================
    NAVBAR & MOBILE MENU
@@ -25,7 +31,7 @@ function initNavbar() {
     } else {
       navbar?.classList.remove('scrolled');
     }
-  });
+  }, { passive: true });
 
   // Mobile menu toggle
   toggleBtn?.addEventListener('click', () => {
@@ -57,8 +63,7 @@ function initAnimatedCounters() {
         const el = entry.target;
         const targetValue = parseInt(el.getAttribute('data-target') || '0', 10);
         const suffix = el.getAttribute('data-suffix') || '';
-        let start = 0;
-        const duration = 1800; // ms
+        const duration = 1600; // ms
         const startTime = performance.now();
 
         function updateCounter(currentTime) {
@@ -80,7 +85,7 @@ function initAnimatedCounters() {
         obs.unobserve(el);
       }
     });
-  }, { threshold: 0.3 });
+  }, { threshold: 0.15 });
 
   statNumbers.forEach(el => observer.observe(el));
 }
