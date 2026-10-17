@@ -2,41 +2,26 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: '01',
-      initials: 'RK',
-      author: 'Rajesh Kumar',
-      role: 'Founder, RetailDirect',
       quote:
         'NEXVIX delivered our website ahead of schedule, and our enquiries doubled within the first month. Professional, responsive and genuinely easy to work with.',
     },
     {
       id: '02',
-      initials: 'AS',
-      author: 'Ananya Sharma',
-      role: 'Operations Director, SwiftLogistics',
       quote:
         'The CRM they built replaced three spreadsheets and hours of manual follow-ups. Our team finally has everything in one place with automated WhatsApp triggers.',
     },
     {
       id: '03',
-      initials: 'MC',
-      author: 'Michael Chen',
-      role: 'Co-Founder, SaaSGrowth',
       quote:
         'Our AI chatbot now handles most customer questions around the clock. It feels like we hired a full support team overnight.',
     },
     {
       id: '04',
-      initials: 'PS',
-      author: 'Priya Sundaram',
-      role: 'Finance & Ops Lead, Apex Health',
       quote:
         'Their workflow automation connected our billing, inventory, and WhatsApp alerts seamlessly. We save over 25 administrative hours each week.',
     },
     {
       id: '05',
-      initials: 'VN',
-      author: 'Vikram Nathan',
-      role: 'Head of Product, QuickShop',
       quote:
         'The mobile application NEXVIX engineered runs at a silky smooth 60fps with exceptional UX. Customer ratings on the Play Store jumped to 4.9 stars.',
     },
@@ -73,15 +58,6 @@ export default function Testimonials() {
                   ★★★★★
                 </div>
                 <p className="testimonial-quote">&ldquo;{item.quote}&rdquo;</p>
-                <div className="testimonial-author-row">
-                  <div className="testimonial-author-avatar">{item.initials}</div>
-                  <div className="testimonial-author-details">
-                    <div className="testimonial-author-name">
-                      {item.author} <span className="verified-badge">✓ Verified Client</span>
-                    </div>
-                    <div className="testimonial-author-role">{item.role}</div>
-                  </div>
-                </div>
               </div>
             ))}
           </div>
@@ -93,15 +69,6 @@ export default function Testimonials() {
                   ★★★★★
                 </div>
                 <p className="testimonial-quote">&ldquo;{item.quote}&rdquo;</p>
-                <div className="testimonial-author-row">
-                  <div className="testimonial-author-avatar">{item.initials}</div>
-                  <div className="testimonial-author-details">
-                    <div className="testimonial-author-name">
-                      {item.author} <span className="verified-badge">✓ Verified Client</span>
-                    </div>
-                    <div className="testimonial-author-role">{item.role}</div>
-                  </div>
-                </div>
               </div>
             ))}
           </div>
