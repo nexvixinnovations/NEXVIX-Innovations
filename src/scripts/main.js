@@ -146,6 +146,8 @@ function initContactForm() {
 
     if (isNameValid && isEmailValid && isMessageValid) {
       const submitBtn = form.querySelector('button[type="submit"]');
+      const errorBanner = document.getElementById('formErrorBanner');
+      const errorMessage = document.getElementById('formErrorMessage');
       const originalText = submitBtn ? submitBtn.innerHTML : 'Send Message';
       
       if (submitBtn) {
@@ -155,25 +157,56 @@ function initContactForm() {
             <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
             <path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor"></path>
           </svg>
-          Sending...
+          Sending Request...
         `;
       }
 
-      // Simulate network request
-      setTimeout(() => {
-        form.reset();
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalText;
-        }
-        if (successBanner) {
-          successBanner.classList.add('visible');
-          successBanner.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          setTimeout(() => {
-            successBanner.classList.remove('visible');
-          }, 8000);
-        }
-      }, 900);
+      if (errorBanner) errorBanner.style.display = 'none';
+
+      const payload = {
+        name: fields.name.value.trim(),
+        email: fields.email.value.trim(),
+        phone: fields.phone ? fields.phone.value.trim() : '',
+        service: fields.service ? fields.service.value : 'Website Development',
+        message: fields.message.value.trim(),
+        honeypot: document.getElementById('hp_company_website')?.value || '',
+      };
+
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+        .then(async (response) => {
+          const data = await response.json().catch(() => ({}));
+          if (response.ok && data.success) {
+            form.reset();
+            if (successBanner) {
+              successBanner.classList.add('visible');
+              successBanner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              setTimeout(() => {
+                successBanner.classList.remove('visible');
+              }, 8000);
+            }
+          } else {
+            if (errorBanner) {
+              if (errorMessage) errorMessage.textContent = data.error || 'Unable to submit your request. Please try again.';
+              errorBanner.style.display = 'flex';
+            }
+          }
+        })
+        .catch(() => {
+          if (errorBanner) {
+            if (errorMessage) errorMessage.textContent = 'A network error occurred. Please try again or reach out on WhatsApp.';
+            errorBanner.style.display = 'flex';
+          }
+        })
+        .finally(() => {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+          }
+        });
     }
   });
 }
