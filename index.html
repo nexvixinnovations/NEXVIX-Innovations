@@ -35,6 +35,19 @@
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="/src/styles/main.css">
+  <!-- Fallback: ensure all content is visible if JS fails or is disabled -->
+  <noscript>
+    <style>
+      .contact-form-card,
+      .contact-form-card * {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+      }
+      .form-success-banner { display: none !important; }
+      .form-error-banner   { display: none !important; }
+    </style>
+  </noscript>
 </head>
 
 <body data-figma-component="Page" data-figma-layer="Marketing-Landing-Page">
@@ -831,7 +844,9 @@
                 <polyline points="20 6 9 17 4 12" />
               </svg>
               <span>Thank you! Your message has been sent. A NEXVIX specialist will reach out shortly.</span>
-            <div class="form-error-banner" id="formErrorBanner" role="alert" style="display: none;">
+            </div>
+
+            <div class="form-error-banner" id="formErrorBanner" role="alert">
               <span id="formErrorMessage">Something went wrong. Please try again.</span>
             </div>
 

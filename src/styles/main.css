@@ -1633,7 +1633,7 @@ select.form-control {
 }
 
 .form-error-banner {
-  display: flex;
+  display: none;
   padding: var(--spacing-4);
   background-color: #FEF2F2;
   border: 1px solid #FECACA;
@@ -1644,6 +1644,10 @@ select.form-control {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+}
+
+.form-error-banner.active {
+  display: flex;
 }
 
 .form-error-banner .retry-btn {

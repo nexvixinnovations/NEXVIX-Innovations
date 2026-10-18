@@ -161,7 +161,7 @@ function initContactForm() {
         `;
       }
 
-      if (errorBanner) errorBanner.style.display = 'none';
+      if (errorBanner) errorBanner.classList.remove('active');
 
       const payload = {
         name: fields.name.value.trim(),
@@ -191,14 +191,14 @@ function initContactForm() {
           } else {
             if (errorBanner) {
               if (errorMessage) errorMessage.textContent = data.error || 'Unable to submit your request. Please try again.';
-              errorBanner.style.display = 'flex';
+              errorBanner.classList.add('active');
             }
           }
         })
         .catch(() => {
           if (errorBanner) {
             if (errorMessage) errorMessage.textContent = 'A network error occurred. Please try again or reach out on WhatsApp.';
-            errorBanner.style.display = 'flex';
+            errorBanner.classList.add('active');
           }
         })
         .finally(() => {
