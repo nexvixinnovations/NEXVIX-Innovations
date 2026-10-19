@@ -1,2 +1,6 @@
-# Redirect www to non-www
-https://www.nexvixinnovations.com/* https://nexvixinnovations.com/:splat 301!
+# Cloudflare Pages Redirects
+# NOTE: /api/* must NOT be intercepted by any catch-all redirect rule.
+# Cloudflare Pages Functions at functions/ handle /api/* natively with first priority.
+
+/services/crm-systems /#services 301
+/services/business-automation /#services 301

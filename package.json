@@ -4,7 +4,7 @@
   "type": "module",
   "description": "NEXVIX Innovations - Marketing Website (static + Cloudflare Pages Functions)",
   "scripts": {
-    "build:static": "node build-static.js",
+    "build:static": "node scripts/build-static.mjs",
     "deploy": "npm run build:static && npx wrangler pages deploy dist --project-name nexvixinnovations --branch main",
     "preview": "npx wrangler pages dev dist --compatibility-date=2024-09-23",
     "test:email": "tsx scripts/test-email.ts",
