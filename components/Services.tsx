@@ -20,7 +20,17 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="services-grid" data-figma-layer="Services-Cards-Grid">
+        <div
+          className="services-grid"
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+            gap: '2rem',
+            maxWidth: '1040px',
+            margin: '0 auto',
+          }}
+          data-figma-layer="Services-Cards-Grid"
+        >
           {siteConfig.services.map((service) => (
             <article
               key={service.slug}

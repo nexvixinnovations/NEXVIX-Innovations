@@ -737,11 +737,11 @@ h1, h2, h3, h4, h5, h6 {
    4. SERVICES SECTION (4 numbered cards - 2 x 2 Grid)
    ========================================================================== */
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-8);
-  max-width: 1040px;
-  margin: 0 auto;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: var(--spacing-8) !important;
+  max-width: 1040px !important;
+  margin: 0 auto !important;
 }
 
 .service-card {
