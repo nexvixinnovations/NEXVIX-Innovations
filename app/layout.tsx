@@ -49,8 +49,6 @@ export const metadata: Metadata = {
     'custom web development',
     'Android app development',
     'AI video creation services',
-    'CRM software development',
-    'business automation services',
     'AI chatbot for business',
     'Erode software company',
     'Tamil Nadu digital solutions',

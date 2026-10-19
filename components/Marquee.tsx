@@ -3,8 +3,6 @@ export default function Marquee() {
     'Website Development',
     'Android Apps',
     'AI Video',
-    'CRM Systems',
-    'Automation',
     'AI Chatbots',
   ];
 

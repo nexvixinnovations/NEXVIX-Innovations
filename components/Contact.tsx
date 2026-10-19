@@ -274,8 +274,6 @@ export default function Contact() {
                     <option value="website-development">Website Development</option>
                     <option value="android-app-development">Android App Development</option>
                     <option value="ai-video-creation">AI Video Creation</option>
-                    <option value="crm-systems">CRM Systems</option>
-                    <option value="business-automation">Business Automation</option>
                     <option value="ai-chatbot">AI Chatbot for Business</option>
                     <option value="consulting">Full Digital Consulting</option>
                   </select>

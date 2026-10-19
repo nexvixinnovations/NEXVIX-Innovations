@@ -62,7 +62,7 @@ export default function NotFound() {
             <span>•</span>
             <Link href="/services/ai-video-creation" className="hover:underline">AI Video</Link>
             <span>•</span>
-            <Link href="/services/crm-systems" className="hover:underline">CRM Systems</Link>
+            <Link href="/services/ai-chatbot" className="hover:underline">AI Chatbots</Link>
           </div>
         </div>
       </div>

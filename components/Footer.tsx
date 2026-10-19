@@ -19,7 +19,7 @@ export default function Footer() {
             <p className="footer-brand-desc">
               <strong>{siteConfig.tagline}</strong>
               <br />
-              A digital solutions company that builds websites, mobile apps, AI tools, and business automation systems to help companies grow faster and work smarter.
+              A digital solutions company that builds websites, mobile apps, AI tools, and AI chatbots to help companies grow faster and work smarter.
             </p>
             <div className="footer-socials" data-figma-layer="Social-Links">
               <a

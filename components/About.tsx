@@ -13,7 +13,7 @@ interface StatItem {
 const stats: StatItem[] = [
   { target: 8, suffix: '+', label: 'Projects Delivered' },
   { target: 8, suffix: '+', label: 'Happy Customers' },
-  { target: 6, suffix: '', label: 'Core Services' },
+  { target: 4, suffix: '', label: 'Core Services' },
   { target: 24, suffix: '/7', label: 'Continuous Support' },
 ];
 

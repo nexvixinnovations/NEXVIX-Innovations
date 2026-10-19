@@ -44,7 +44,7 @@ export default function PrivacyPolicyPage() {
               <span className="text-[#1F3BFF]">01.</span> Scope &amp; Overview
             </h2>
             <p>
-              This Privacy Policy applies to all services, websites, client portals, and digital communications operated by <strong>NEXVIX Innovations</strong>, headquartered in Perundurai, Erode, Tamil Nadu, India. By accessing our website (<a href={siteConfig.domain} className="text-[#6B7FFF] underline hover:text-white transition-colors">{siteConfig.domain}</a>) or submitting inquiries regarding website development, mobile apps, CRM systems, AI chatbots, or automation tools, you accept the practices described herein.
+              This Privacy Policy applies to all services, websites, client portals, and digital communications operated by <strong>NEXVIX Innovations</strong>, headquartered in Perundurai, Erode, Tamil Nadu, India. By accessing our website (<a href={siteConfig.domain} className="text-[#6B7FFF] underline hover:text-white transition-colors">{siteConfig.domain}</a>) or submitting inquiries regarding website development, mobile apps, AI video creation, or AI chatbots, you accept the practices described herein.
             </p>
           </section>
 

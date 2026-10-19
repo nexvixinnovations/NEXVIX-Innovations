@@ -21,10 +21,10 @@ export const siteConfig = {
   legalName: 'NEXVIX Innovations',
   tagline: 'Innovate. Automate. Elevate.',
   domain: process.env.NEXT_PUBLIC_SITE_URL || 'https://nexvixinnovations.com',
-  defaultTitle: 'NEXVIX Innovations | Website, App, AI Chatbot & Automation Services',
+  defaultTitle: 'NEXVIX Innovations | Website, App, AI Video & AI Chatbot Services',
   titleTemplate: '%s | NEXVIX Innovations',
   defaultDescription:
-    'NEXVIX Innovations builds cutting-edge websites, mobile apps, AI tools, and business automation systems that help ambitious companies grow faster and work smarter.',
+    'NEXVIX Innovations builds cutting-edge websites, mobile apps, AI tools, and AI chatbots that help ambitious companies grow faster and work smarter.',
   ogImage: '/assets/images/og-image.jpg',
   themeColor: '#0066FF',
   locale: 'en_US',
@@ -199,104 +199,10 @@ export const siteConfig = {
       ],
     },
     {
-      slug: 'crm-systems',
-      name: 'CRM Systems',
-      shortTitle: 'CRM Systems',
-      number: '04',
-      catchy: 'Know your customers. Close more deals.',
-      summary: 'Custom CRM platforms to manage leads, sales pipelines, follow-ups, and automated revenue reports in one place.',
-      description:
-        'Eliminate lost leads and manual spreadsheet tracking with bespoke Customer Relationship Management (CRM) platforms engineered specifically around your sales cycle. NEXVIX Innovations builds role-based CRM platforms with automated deal stages, WhatsApp/email integration, and real-time executive analytics.',
-      metaTitle: 'Custom CRM Software Development | Lead & Sales Pipeline Systems',
-      metaDescription:
-        'Accelerate sales conversions with custom CRM systems by NEXVIX Innovations. Centralize leads, automate client follow-ups, and track revenue analytics.',
-      primaryKeyword: 'CRM software development',
-      secondaryKeywords: ['custom CRM systems', 'sales pipeline software', 'lead management platform', 'business CRM integration'],
-      image: '/assets/images/service-crm-systems.webp',
-      imageAlt: 'Sales operations specialist analyzing client deals and pipeline analytics on custom CRM platform',
-      features: [
-        'Tailored Sales Funnel Workflows Customized to Your Exact Business Model',
-        'Automated Lead Capture from Website Forms, WhatsApp, and Social Ad Campaigns',
-        'One-Click WhatsApp & Email Follow-up Templates with Tracking',
-        'Granular Role-Based Access Control (Admins, Sales Reps, Support Agents)',
-        'Real-Time KPI Dashboards, Conversion Rates, and Revenue Forecasting',
-        'Automated Quotation, Invoice Generation, and Payment Reconciliation',
-      ],
-      faqs: [
-        {
-          question: 'Why choose a custom CRM over off-the-shelf software like Salesforce or HubSpot?',
-          answer:
-            'Off-the-shelf CRMs charge hefty recurring per-user monthly fees and come bloated with unnecessary features. A custom NEXVIX CRM gives you 100% data ownership, zero per-seat licensing penalties, and a workflow built specifically for how your team operates.',
-        },
-        {
-          question: 'Can the CRM integrate with our WhatsApp Business and Gmail accounts?',
-          answer:
-            'Yes. We seamlessly connect WhatsApp Business APIs and email servers directly into the lead timeline, allowing reps to message and record conversations without switching tabs.',
-        },
-        {
-          question: 'Is client and financial data secure?',
-          answer:
-            'Security is fundamental: we implement encrypted database fields, strict IP whitelisting options, automated daily backups, and role-based permissions.',
-        },
-        {
-          question: 'Can we migrate existing customer records from Excel sheets?',
-          answer:
-            'Yes, we provide automated CSV/Excel migration scripts and data cleaning to ensure historical records transition smoothly without downtime.',
-        },
-      ],
-    },
-    {
-      slug: 'business-automation',
-      name: 'Business Automation',
-      shortTitle: 'Automation',
-      number: '05',
-      catchy: 'Let the busywork run itself.',
-      summary: 'Automate invoicing, emails, reporting, lead capture, and internal workflows by connecting the tools you already use.',
-      description:
-        'Free your team from repetitive manual tasks. NEXVIX Innovations builds intelligent automation pipelines connecting your website, accounting software, communications, and databases. We replace hours of copy-pasting with instant, error-free event-driven triggers.',
-      metaTitle: 'Business Process Automation Services | Workflow & API Integration',
-      metaDescription:
-        'Save hours each week with business automation services by NEXVIX Innovations. Connect tools, automate invoicing, reporting, and lead pipelines.',
-      primaryKeyword: 'business automation services',
-      secondaryKeywords: ['workflow automation solutions', 'API integration services', 'business process automation', 'automated lead routing'],
-      image: '/assets/images/automation.webp',
-      imageAlt: 'Automated workflow pipeline connecting enterprise apps and synchronization engines',
-      features: [
-        'Multi-App Event Triggers Connecting Web, CRM, Accounting, and Cloud Storage',
-        'Automated PDF Invoice Generation, Payment Reminders, and Receipt Delivery',
-        'Instant Team Notifications on WhatsApp, Slack, or Email for Priority Events',
-        'Scheduled Automated Executive Reporting and Data Sync Across Databases',
-        'Zero-Error Lead Routing and Instant Assignment to Available Sales Agents',
-        'Custom Webhooks and REST/GraphQL Microservices for Legacy Software',
-      ],
-      faqs: [
-        {
-          question: 'What types of tasks can be automated in our business?',
-          answer:
-            'Common automations include: sending instant WhatsApp confirmations upon form submission, generating and emailing GST invoices upon payment, synchronizing CRM leads with accounting software, and dispatching weekly KPI reports to leadership.',
-        },
-        {
-          question: 'Do we need to replace our current software to use automation?',
-          answer:
-            'No. Our automation solutions connect into the tools you already use daily (Google Workspace, WhatsApp, Razorpay/Stripe, Tally, Zoho, Notion, Airtable, Slack) via secure APIs.',
-        },
-        {
-          question: 'What happens if an API or third-party service experiences downtime?',
-          answer:
-            'Our automation engines feature resilient error-catching, retry queues, and automatic fallback alerts so zero data is lost during external outages.',
-        },
-        {
-          question: 'How quickly does automation deliver a return on investment (ROI)?',
-          answer:
-            'Most clients save 15 to 30 administrative hours per week immediately upon deployment, recouping their investment within the first 60 days.',
-        },
-      ],
-    },
-    {
       slug: 'ai-chatbot',
       name: 'AI Chatbot for Business',
       shortTitle: 'AI Chatbots',
-      number: '06',
+      number: '04',
       catchy: 'Your best employee never sleeps.',
       summary: 'Smart AI chatbots that answer questions, capture leads, and support customers 24/7 on your website, WhatsApp, and social channels.',
       description:

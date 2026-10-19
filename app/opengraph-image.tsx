@@ -73,7 +73,7 @@ export default async function Image() {
             justifyContent: 'center',
           }}
         >
-          <span>Websites, Android Apps, AI Video, Custom CRM &amp; Business Automation</span>
+          <span>Websites, Android Apps, AI Video &amp; AI Chatbots</span>
         </div>
 
         <div
