@@ -4,6 +4,10 @@ export default function Marquee() {
     'Android Apps',
     'AI Video',
     'AI Chatbots',
+    'Website Development',
+    'Android Apps',
+    'AI Video',
+    'AI Chatbots',
   ];
 
   return (
